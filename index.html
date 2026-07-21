@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
+        <meta name="description" content="刘金昊 Liu Jinhao - 个人主页 / Personal Homepage" />
+        <meta name="author" content="Liu Jinhao" />
+        <title>刘金昊 Liu Jinhao · 个人主页</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,23 +14,51 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- 中英文切换样式 -->
+        <style>
+            html[lang="en"] .zh { display: none !important; }
+            html[lang="zh"] .en { display: none !important; }
+            .lang-switch {
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+                z-index: 1050;
+                background: #bd5d38;
+                color: #fff;
+                border: none;
+                border-radius: 9999px;
+                padding: 0.45rem 1.1rem;
+                font-size: 0.9rem;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+                cursor: pointer;
+                box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+                transition: opacity 0.15s ease-in-out;
+            }
+            .lang-switch:hover { opacity: 0.85; }
+            @media (max-width: 991.98px) {
+                .lang-switch { top: auto; bottom: 1rem; right: 1rem; }
+            }
+        </style>
     </head>
     <body id="page-top">
+        <!-- 中英文切换按钮 -->
+        <button class="lang-switch" type="button" aria-label="切换语言 / Switch language">EN</button>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-block d-lg-none"><span class="zh">刘金昊</span><span class="en">Liu Jinhao</span></span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/image.png" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span class="zh">关于</span><span class="en">About</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span class="zh">科研经历</span><span class="en">Experience</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span class="zh">教育背景</span><span class="en">Education</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span class="zh">专业技能</span><span class="en">Skills</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests"><span class="zh">研究兴趣</span><span class="en">Interests</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><span class="zh">奖项荣誉</span><span class="en">Awards</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -40,19 +68,20 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Liu
-                        <span class="text-primary">Jinhao</span>
+                        <span class="zh">刘<span class="text-primary">金昊</span></span>
+                        <span class="en">Liu <span class="text-primary">Jinhao</span></span>
                     </h1>
                     <div class="subheading mb-5">
-                        Xuzhou · Jiangsu Province ·
-                        <a href="mailto:name@email.com">liujh@cumt.edu.cn</a>
+                        <span class="zh">江苏徐州 · 中国矿业大学 · </span><span class="en">Xuzhou, Jiangsu · CUMT · </span>
+                        <a href="mailto:liujh@cumt.edu.cn">liujh@cumt.edu.cn</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">
+                        <span class="zh">中国矿业大学计算机科学与技术学院本科生，研究兴趣为 AI Infra，专注于面向 Agent 系统的高性能沙箱基础设施，同时关注系统安全与轻量级虚拟化方向。</span>
+                        <span class="en">Undergraduate student at the School of Computer Science and Technology, China University of Mining and Technology. Research interest in AI Infra, focusing on high-performance sandbox infrastructure for agent systems, with additional interest in system security and lightweight virtualization.</span>
+                    </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://github.com/Loken-Lau" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="mailto:liujh@cumt.edu.cn"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </section>
@@ -60,38 +89,22 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    <h2 class="mb-5"><span class="zh">科研经历</span><span class="en">Experience</span></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0"><span class="zh">清华大学计算机系 MADSys 实验室</span><span class="en">MADSys Lab, Tsinghua University</span></h3>
+                            <div class="subheading mb-3"><span class="zh">Agent Infra 项目</span><span class="en">Agent Infra Project</span></div>
+                            <p><span class="zh">参与 Agent Infra 项目，该项目面向 Agent 系统构建高性能沙箱基础设施。我主要负责搭建性能基准测试模块，设计并实现性能基准测试框架。</span><span class="en">Participated in the Agent Infra project, which builds high-performance sandbox infrastructure for agent systems. Mainly responsible for building the performance benchmarking module, and designing and implementing a performance benchmarking framework.</span></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="zh">2025.12 - 2026.03</span><span class="en">Dec 2025 - Mar 2026</span></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                            <h3 class="mb-0"><span class="zh">中国矿业大学 · 李勇钢老师课题组</span><span class="en">China University of Mining and Technology · Prof. Yonggang Li's Group</span></h3>
+                            <div class="subheading mb-3"><span class="zh">系统安全与虚拟化方向</span><span class="en">System Security & Virtualization</span></div>
+                            <p><span class="zh">跟随李勇钢老师开展系统安全与虚拟化方向研究，参与轻量级虚拟化平台搭建，并基于该平台实现未知软件运行时追踪与检测，进一步完成未知软件系统行为刻画及源码功能性恢复。</span><span class="en">Conducted research on system security and virtualization under Prof. Yonggang Li. Participated in building a lightweight virtualization platform, and implemented runtime tracking and detection of unknown software on this platform, further characterizing system behaviors and recovering source-level functionality of unknown software.</span></p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="zh">2025.06 - 2025.12</span><span class="en">Jun 2025 - Dec 2025</span></span></div>
                     </div>
                 </div>
             </section>
@@ -99,23 +112,14 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5"><span class="zh">教育背景</span><span class="en">Education</span></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <h3 class="mb-0"><span class="zh">中国矿业大学</span><span class="en">China University of Mining and Technology</span></h3>
+                            <div class="subheading mb-3"><span class="zh">计算机科学与技术学院</span><span class="en">School of Computer Science and Technology</span></div>
+                            <div><span class="zh">计算机科学与技术 · 本科</span><span class="en">Computer Science and Technology · Bachelor</span></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span class="zh">2023-09 - 2027-06</span><span class="en">Sep 2023 - Jun 2027</span></span></div>
                     </div>
                 </div>
             </section>
@@ -123,39 +127,33 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <h2 class="mb-5"><span class="zh">专业技能</span><span class="en">Skills</span></h2>
+                    <div class="subheading mb-3"><span class="zh">编程语言与工具</span><span class="en">Programming Languages & Tools</span></div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-rust"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3"><span class="zh">研究方向</span><span class="en">Research Directions</span></div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            <span class="zh">系统安全与轻量级虚拟化</span><span class="en">System Security & Lightweight Virtualization</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            <span class="zh">未知软件运行时追踪与行为分析</span><span class="en">Runtime Tracking & Behavior Analysis of Unknown Software</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            <span class="zh">性能基准测试框架设计与实现</span><span class="en">Performance Benchmarking Framework Design</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            <span class="zh">AI Infra 与 Agent 系统基础设施</span><span class="en">AI Infra & Agent System Infrastructure</span>
                         </li>
                     </ul>
                 </div>
@@ -164,54 +162,27 @@
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <h2 class="mb-5"><span class="zh">研究兴趣</span><span class="en">Interests</span></h2>
+                    <p><span class="zh">我的研究兴趣集中在 AI Infra，尤其关注面向 Agent 系统的高性能沙箱基础设施，希望为智能体系统提供高效、安全、可观测的运行时支撑。同时，我也持续关注系统安全与轻量级虚拟化方向，探索如何通过虚拟化技术提升未知软件的分析与追踪能力。</span><span class="en">My research interests focus on AI Infra, particularly high-performance sandbox infrastructure for agent systems, aiming to provide efficient, secure, and observable runtime support for agent systems. I also continue to follow system security and lightweight virtualization, exploring how virtualization techniques can improve the analysis and tracking of unknown software.</span></p>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5"><span class="zh">奖项荣誉</span><span class="en">Awards & Certifications</span></h2>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            <span class="zh">国家奖学金（2025）</span><span class="en">National Scholarship (2025)</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
+                            <span class="zh">绿盟科技奖学金（2025）</span><span class="en">NSFOCUS Scholarship (2025)</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
+                            <span class="zh">校一等奖学金（2024）</span><span class="en">University First-Class Scholarship (2024)</span>
                         </li>
                     </ul>
                 </div>
@@ -221,5 +192,23 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- 中英文切换逻辑 -->
+        <script>
+            (function () {
+                var btn = document.querySelector('.lang-switch');
+                if (!btn) return;
+                var html = document.documentElement;
+                function sync() {
+                    var isZh = html.getAttribute('lang') === 'zh';
+                    btn.textContent = isZh ? 'EN' : '中';
+                    document.title = isZh ? '刘金昊 Liu Jinhao · 个人主页' : 'Liu Jinhao · Home';
+                }
+                sync();
+                btn.addEventListener('click', function () {
+                    html.setAttribute('lang', html.getAttribute('lang') === 'zh' ? 'en' : 'zh');
+                    sync();
+                });
+            })();
+        </script>
     </body>
 </html>
